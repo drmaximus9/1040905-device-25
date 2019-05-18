@@ -45,47 +45,65 @@
           <li class="breadcrumbs-current">Моноподы для селфи</li>
       </ul>
       <section class="filters">
-            <h2 class="visually-hidden">Фильтр товаров</h2>
-            <h3>Цвет</h3>
-            <form action="https://echo.htmlacademy.ru" method="post">
-              <p>
-                <label>
-                  <input type="checkbox" name="color" value="black" checked>
-                     Чёрный
-                </label>
-                <label>
-                  <input type="checkbox" name="color" value="white">
-                     Белый
-                </label>
-                <label>
-                  <input type="checkbox" name="color" value="blue" checked>
-                     Синий
-                </label>
-                <label>
-                  <input type="checkbox" name="color" value="red" checked>
-                     Красный
-                </label>
-                <label>
-                  <input type="checkbox" name="color" value="pink">
-                     Розовый
-                </label>
-            </p>
-            <p>
-                <h3>Bluetooth</h3>
-                <label>
-                  <input type="radio" name="bluetooth" value="yes" checked>
-                    Есть
-                </label>
-                <label>
-                  <input type="radio" name="bluetooth" value="no">
-                     Нет
-                </label>
-                  <button class="show" type="submit" name="show">
-                     Показать
-                  </button>
-           </p>
-         </form>
-       </section>
+          <h2 class="visually-hidden">Фильтр товаров</h2>
+            <form action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="color">
+              <legend>Цвет</legend>
+              <ul>
+                <li class="filter-option">
+                    <label>
+                        <input type="checkbox" name="color" value="black" checked>
+                           Чёрный
+                      </label>
+                </li>
+                <li class="filter-option">
+                    <label>
+                        <input type="checkbox" name="color" value="white">
+                           Белый
+                      </label>
+                </li>
+                <li class="filter-option">
+                    <label>
+                        <input type="checkbox" name="color" value="blue" checked>
+                        Синий
+                   </label>
+                </li>
+                <li class="filter-option">
+                    <label>
+                        <input type="checkbox" name="color" value="red" checked>
+                           Красный
+                      </label>
+                </li>  
+                <li class="filter-option">
+                    <label>
+                        <input type="checkbox" name="color" value="pink">
+                           Розовый
+                    </label>
+                </li>
+              </ul>  
+          </fieldset>
+          <fieldset class="bluetooth">
+              <legend>Bluetooth</legend>
+              <ul>
+                <li class="filter-option">
+                    <label>
+                        <input type="radio" name="bluetooth" value="yes" checked>
+                          Есть
+                      </label>
+                </li>
+                <li class="filter-option">
+                    <label>
+                        <input type="radio" name="bluetooth" value="no">
+                           Нет
+                      </label>
+                </li>
+              </ul>         
+          </fieldset>
+          <button class="show" type="submit" name="show">
+                   Показать
+                </button>
+        </form>
+     </section>
        <section class="catalog">
          <h2 class="visually-hidden">Список моноподов для селфи</h2>
            <ul class="catalog-list">
