@@ -10,6 +10,10 @@
       <a class="main-header-logo" href="index.html">
         <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
       </a>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <input type="search" name="search" placeholder="Поиск по сайту">
+        <input type="submit" name="search" value="Найти">
+      </form>
       <nav class="main-navigation">
         <ul class="user-navigation">
           <!--Здесь будет форма-->
@@ -18,7 +22,15 @@
             <li><a href="basket.html">корзина</a></li>
         </ul>
         <ul class="site-navigation">
-          <li><a href="catalog.html">каталог товаров</a></li>
+          <li class="catalog-current">каталог товаров
+            <ul class="sub-navigation">
+              <li><a href="virtualreality.html">Виртуальная реальность<a></li>
+              <li><a href="monopods.html">Моноподы для селфи<a></li>
+              <li><a href="actioncamera.html">Экшн камеры<a></li>
+              <li><a href="fitnesswristbands.html">Фитнес браслеты<a></li>
+              <li><a href="smartwatch.html">Умные часы<a></li>
+              <li><a href="quadcopters.html">Квадрокоптеры<a></li>
+            </ul>
           <li><a href="delivery.html">доставка</a></li>
           <li><a href="guarantee.html">гарантия</a></li>
           <li><a href="contacts.html">контакты</a></li>
@@ -34,7 +46,45 @@
       </ul>
       <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
-            <!--Здесь будет форма-->
+            <h3>Цвет</h3>
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label>
+                  <input type="checkbox" name="color" value="black" checked>
+                     Чёрный
+                </label>
+                <label>
+                  <input type="checkbox" name="color" value="white">
+                     Белый
+                </label>
+                <label>
+                  <input type="checkbox" name="color" value="blue" checked>
+                     Синий
+                </label>
+                <label>
+                  <input type="checkbox" name="color" value="red" checked>
+                     Красный
+                </label>
+                <label>
+                  <input type="checkbox" name="color" value="pink">
+                     Розовый
+                </label>
+            </p>
+            <p>
+                <h3>Bluetooth</h3>
+                <label>
+                  <input type="radio" name="bluetooth" value="yes" checked>
+                    Есть
+                </label>
+                <label>
+                  <input type="radio" name="bluetooth" value="no">
+                     Нет
+                </label>
+                  <button class="show" type="submit" name="show">
+                     Показать
+                  </button>
+            </p>
+         </form>
        </section>
        <section class="catalog">
          <h2 class="visually-hidden">Список моноподов для селфи</h2>
