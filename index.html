@@ -10,9 +10,9 @@
       <a class="main-header-logo">
         <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
       </a>
-      <form action="/echo.htmlacademy.ru" method="post">
+      <form action="/echo.htmlacademy.ru" method="get">
         <input type="search" name="search" value="" placeholder="Поиск по сайту">
-        <input type="submit" name="search" value="Найти">
+        <input type="submit" value="Найти">
       </form>
 
       <nav class="main-navigation">
@@ -22,7 +22,16 @@
           <li><a href="basket.html">корзина</a></li>
         </ul>
         <ul class="site-navigation">
-          <li><a href="catalog.html">каталог товаров</a></li>
+          <li><a href="catalog.html">каталог товаров</a>
+            <ul class="sub-navigation">
+                <li><a href="virtualreality.html">Виртуальная реальность</a></li>
+                <li><a href="monopods.html">Моноподы для селфи</a></li>
+                <li><a href="actioncamera.html">Экшн камеры</a></li>
+                <li><a href="fitnesswristbands.html">Фитнес браслеты</a></li>
+                <li><a href="smartwatch.html">Умные часы</a></li>
+                <li><a href="quadcopters.html">Квадрокоптеры</a></li>
+              </ul>
+          </li>
           <li><a href="delivery.html">доставка</a></li>
           <li><a href="guarantee.html">гарантия</a></li>
           <li><a href="contacts.html">контакты</a></li>
@@ -114,25 +123,27 @@
       <h3 class="visually-hidden">Напишите нам</h3>
       <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
         <p>
-            <label>Ваше имя
-                <input type="text" name="username" placeholder="Имя фамилия">
-            </label>
-            <label>Ваш e-mail
-                <input type="text" name="email" placeholder="email@example.com">
-            </label>
+        <label for="username">Ваше имя:</label>
+        <label for="email">Ваш e-mail:</label>
         </p>
         <p>
-            <label>Текст письма<br>
-                <textarea name="mail-text" rows="10">
-                  В свободной форме
-                </textarea>
-            </label>
+           <input type="text" name="username" placeholder="Имя фамилия" id="username">
+           <input type="email" name="email" placeholder="email@example.com" id="email">
         </p>
-        <button type="submit" name="send">
-            Отправить
-        </button>
-        <input type="button" name="modal-close" value="закрыть">
-     </form>
+        
+        <label>Текст письма:</label>
+        <p>
+          <textarea name="mail-text" rows="10" cols="30">
+              В свободной форме
+          </textarea>
+        </p>
+        <button type="submit"> 
+          Отправить 
+        </button> 
+      </form>
+      <button class="modal-close" type="button" name="modal-close">
+       Закрыть
+      </button>
     </div>
 
     <div class="modal modal-map">
@@ -141,7 +152,7 @@
           <img src="img/map-big.jpg" width="994" height="593"
            alt="Офис компании по адрессу: г.Москва ул. Строителей, 15">
       </p>
-      <button class="modal-close" type="button">
+      <button class="modal-close" type="button" name="modal-close">
           Закрыть
       </button>
    </div>
