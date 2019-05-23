@@ -1,0 +1,230 @@
+body  {
+    margin: 0;
+  
+
+    font-family: 'Gilroy', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+
+    background: #ffffff;
+
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('gilroyextrabold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Gilroy';
+    src: url('gilroylight.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+.main-header {
+    background-color: #f7e296;
+}
+
+.search {
+    border: none;
+    background-color: #f7e296;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+/*a .main-header-logo:hover */ 
+   
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    font: inherit;
+    border: none;
+}
+
+.user-navigation,
+.site-navigation,
+.sub-navigation {
+    list-style: none;
+
+} 
+.user-navigation a,
+.site-navigation a,
+.sub-navigation a {
+    color: #000000;
+}
+.user-navigation a:hover,
+.site-navigation a:hover,
+.sub-navigation a:hover {
+    color: #6c6342;
+}
+.user-navigation a:focus,
+.site-navigation a:focus,
+.sub-navigation a:focus{
+    color: #6c6342;
+}    
+.user-navigation a:active,
+.site-navigation a:active,
+.sub-navigation a:active {
+    color: #ac9e69;
+}
+.user-navigation {
+    font-family: "Open-sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #000000;
+}  
+.site-navigation {
+    text-transform: uppercase;
+    
+}
+.breadcrumbs {
+    list-style: none;
+}
+.breadcrumbs a {
+    color: #000000;
+}
+
+.filter-list {
+    list-style: none;
+}
+.bluetooth-filter {
+    list-style: none;
+}
+.catalog-list {
+    list-style: none;
+}
+.catalog-list a {
+    color: #000000;
+}
+.price {
+    font-weight: 300;
+    color: #7e7e7e;
+}
+
+.info {
+    text-align: left;
+}
+.info h2 {
+    font-size: 47px;
+    line-height: 48px;
+    
+    
+}
+.info p {
+    font-family: "Open-sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+}
+.info a {
+    color: #000000;
+
+}
+
+
+.transport-company {
+    list-style-type: circle;
+}
+.contacts h2 {
+    font-size: 47px;
+    line-height: 48px; 
+}
+.contacts p {
+    font-family: "Open-sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+}
+.contacts a {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 900;
+    color: #000000;
+
+}
+
+
+.main-footer {
+    background-color: #464646;
+    color: #ffffff;
+    
+}
+ .user-footer-navigation a,
+ .social a {
+    color: #d3d3d3;
+    font-family: "Open-sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+    text-transform: capitalize;
+    
+}
+.user-footer-navigation,
+.site-footer-navigation,
+.social {
+    list-style: none;
+}
+
+.site-footer-navigation a {
+    color: #ffffff;
+}
+.user-footer-navigation a:hover,
+.social a:hover {
+    color: #dadada;
+}
+.user-footer-navigation a:focus,
+.social a:focus {
+    color: #dadada;
+}
+.site-footer-navigation a:hover {
+    color: #b5b5b5;
+}
+.site-footer-navigation a:focus {
+    color: #b5b5b5;
+}
+
+.user-footer-navigation a:active,
+.social a:active {
+    color: #676767;
+}
+.site-footer-navigation a:active {
+    color: #7e7e7e;
+}
+.write-form input {
+    font: inherit;
+    border: none;
+    background-color: #f2f2f2;
+
+}
+.mail-text {
+    font: inherit;
+    border: none;
+    background-color: #f2f2f2;
+
+}
+
+
+
+
+
+

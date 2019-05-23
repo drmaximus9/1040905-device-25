@@ -3,16 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="inner-page">
     <header class="main-header">
       <h1 class="visually-hidden">DEVICE</h1>
       <a class="main-header-logo" href="index.html">
         <img src="img/logo.svg" width="163" height="35" alt="Логотип интернет-магазина DEVICE">
       </a>
       <form action="https://echo.htmlacademy.ru" method="get">
-        <input type="search" name="search" placeholder="Поиск по сайту">
-        <input type="submit" value="Найти">
+        <input class="search" type="search" name="search" placeholder="Поиск по сайту">
+        <input class="button" type="submit" value="Найти">
       </form>
       <nav class="main-navigation">
         <ul class="user-navigation">
@@ -47,10 +50,10 @@
       </ul>
       <section class="filters">
           <h2 class="visually-hidden">Фильтр товаров</h2>
-            <form action="https://echo.htmlacademy.ru" method="get">
+            <form class="form-filters" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="color">
               <legend>Цвет</legend>
-              <ul>
+              <ul class="filter-list">
                 <li class="filter-option">
                     <label for="black">Чёрный</label>
                         <input type="checkbox" name= "black" id="black"  checked>      
@@ -75,7 +78,7 @@
           </fieldset>
           <fieldset class="bluetooth">
               <legend>Bluetooth</legend>
-              <ul>
+              <ul class="bluetooth-filter">
                 <li class="filter-option">
                     <label for="yes">Есть</label>
                         <input type="radio" name="bluetooth" value="yes" id="yes" checked>    
@@ -86,7 +89,7 @@
                 </li>
               </ul>         
           </fieldset>
-          <button class="show" type="submit" name="show">
+          <button class="button" type="submit" name="show">
                    Показать
                 </button>
         </form>
@@ -104,8 +107,8 @@
                    <img src="img/product-1.jpg" width="360" height="380"
                       alt="Любительская селфи-палка">
                  </p>
-                 <p>
-                   500 р
+                 <p class="price">
+                   500 руб.
                  </p>
               </li>
               <li class="catalog-item">
@@ -118,8 +121,8 @@
                     <img src="img/product-2.jpg" width="360" height="380"
                          alt="Профессиональная селфи-палка">
                  </p>
-                 <p>
-                   1500 р
+                 <p class="price">
+                   1500 руб.
                  </p>
               </li>
               <li class="catalog-item">
@@ -132,8 +135,8 @@
                     <img src="img/product-3.jpg" width="360" height="380"
                         alt="Непотопляемая селфи-палка">
                   </p>
-                  <p>
-                   2500 р
+                  <p class="price">
+                   2500 руб.
                   </p>
               </li>
               <li class="catalog-item">
@@ -146,8 +149,8 @@
                      <img src="img/product-4.jpg" width="360" height="380"
                         alt="Селфи-палка «Следуй за мной»">
                   </p>
-                  <p>
-                    4900 р
+                  <p class="price">
+                    4900 руб.
                   </p>
               </li>
                     
@@ -162,24 +165,24 @@
         г. Москва, ул. Строителей, 15
       </p>
       <nav class="footer-navigation">
-        <ul class="user-navigation">
+        <ul class="user-footer-navigation">
             <li class="login-link"><a href="#">Войти</a></li>
             <li><a href="comparisen.html">Сравнить</a></li>
             <li><a href="basket.html">корзина</a></li>
         </ul>
       </nav>
       <nav>  
-        <ul class="site-navigation">
+        <ul class="site-footer-navigation">
             <li><a href="delivery.html">доставка</a></li>
             <li><a href="guarantee.html">гарантия</a></li>
             <li><a href="contacts.html">контакты</a></li>
         </ul>
       </nav> 
 
-      <span>Тел.: +7 (495) 495-95-95</span>
+      <span class="telefon-number">Тел.: +7 (495) 495-95-95</span>
 
       <div class="footer-social">
-          <ul>
+          <ul class="social">
               <li>
                   <a class="social-button" href="#">
                     Фейсбук
