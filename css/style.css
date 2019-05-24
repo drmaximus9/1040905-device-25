@@ -6,7 +6,7 @@ body  {
     font-size: 18px;
     line-height: 24px;
     font-weight: 800;
-    color: #464646;
+    color: #000000;
 
     background: #ffffff;
 
@@ -51,13 +51,23 @@ body  {
 
 a {
     text-decoration: none;
+    letter-spacing: 2px; 
 }
 
 .button {
     font: inherit;
     border: none;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
+
+.user-navigation a,
+.user-footer-navigation a,
+.social a,
+.sub-navigation a {
+    letter-spacing: normal;
+}
+
 
 .user-navigation,
 .site-navigation,
@@ -97,7 +107,14 @@ a {
     text-transform: uppercase;
     
 }
-
+.sub-navigation {
+    font-family: "Open sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 36px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #000000;
+}
 
 .color,
 .bluetooth {
@@ -108,11 +125,21 @@ a {
     text-transform: capitalize;
     color: #000000;
 }
+
 .breadcrumbs {
+    font-family: "Open sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #676767;
+
     list-style: none;
+    
 }
 .breadcrumbs a {
-    color: #000000;
+    color: #676767;
+    letter-spacing: normal;
 }
 
 .filter-list {
@@ -122,10 +149,16 @@ a {
     list-style: none;
 }
 .catalog-list {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    color: #000000;
     list-style: none;
 }
 .catalog-list a {
     color: #000000;
+    letter-spacing: normal;
 }
 .price {
     font-weight: 300;
