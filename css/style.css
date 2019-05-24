@@ -231,7 +231,11 @@ a {
 
 }
 .mail-text {
-    font: inherit;
+    font-family: "Open sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #464646;
     border: none;
     background-color: #f2f2f2;
 
@@ -243,6 +247,21 @@ a {
     font-weight: 300;
     font-size: 14px;
     line-height: 15px;
+}
+.modal-write {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    color: #000000;
+
+}
+.write-form input {
+    font-family: "Open sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #464646;
 }
 
 
