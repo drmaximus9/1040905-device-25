@@ -2,25 +2,25 @@ body  {
     margin: 0;
   
 
-    font-family: 'Gilroy', Arial, sans-serif;
+    font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 700;
-    color: #000000;
+    font-weight: 800;
+    color: #464646;
 
     background: #ffffff;
 
 }
 
 @font-face {
-    font-family: 'Gilroy';
-    src: url('gilroyextrabold.woff2') format('woff2');
-    font-weight: 700;
+    font-family: "Gilroy";
+    src: url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff");
+    font-weight: 800;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Gilroy';
-    src: url('gilroylight.woff2') format('woff2');
+    font-family: "Gilroy";
+    src: url("../fonts/gilroylight.woff2") format("woff2"), url("../fonts/gilroylight.woff") format("woff");
     font-weight: 300;
     font-style: normal;
 }
@@ -56,6 +56,7 @@ a {
 .button {
     font: inherit;
     border: none;
+    text-transform: uppercase;
 }
 
 .user-navigation,
@@ -85,7 +86,7 @@ a {
     color: #ac9e69;
 }
 .user-navigation {
-    font-family: "Open-sans", Arial, sans-serif;
+    font-family: "Open sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     font-weight: 300;
@@ -95,6 +96,17 @@ a {
 .site-navigation {
     text-transform: uppercase;
     
+}
+
+
+.color,
+.bluetooth {
+    font-family: "Open sans", Arial, sans-serif;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #000000;
 }
 .breadcrumbs {
     list-style: none;
@@ -117,7 +129,7 @@ a {
 }
 .price {
     font-weight: 300;
-    color: #7e7e7e;
+    color: #464646;
 }
 
 .info {
@@ -129,17 +141,24 @@ a {
     
     
 }
-.info p {
-    font-family: "Open-sans", Arial, sans-serif;
+.info p,
+.contacts p {
+    font-family: "Open sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     font-weight: 300;
+    color: #464646;
 }
 .info a {
     color: #000000;
 
 }
-
+.about-us,
+.write-us {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
 
 .transport-company {
     list-style-type: circle;
@@ -148,17 +167,12 @@ a {
     font-size: 47px;
     line-height: 48px; 
 }
-.contacts p {
-    font-family: "Open-sans", Arial, sans-serif;
-    font-size: 15px;
-    line-height: 30px;
-    font-weight: 300;
-}
+ 
 .contacts a {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
-    font-weight: 900;
+    font-weight: 800;
     color: #000000;
 
 }
@@ -172,7 +186,7 @@ a {
  .user-footer-navigation a,
  .social a {
     color: #d3d3d3;
-    font-family: "Open-sans", Arial, sans-serif;
+    font-family: "Open sans", Arial, sans-serif;
     font-size: 15px;
     line-height: 30px;
     font-weight: 300;
@@ -222,6 +236,15 @@ a {
     background-color: #f2f2f2;
 
 }
+.footer-contacts,
+.telefon-number 
+ {
+    font-family: "Open sans", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 15px;
+}
+
 
 
 
