@@ -26,13 +26,145 @@ body  {
 }
 
 .main-header {
+    
     background-color: #f7e296;
+    margin-bottom: 481px;
+    margin-top: 40px;
 }
+.inner-page .main-header {
+    margin-bottom: 44px;
+
+}
+.main-header-logo {
+    width: 163px;
+    height: 35px;
+    margin: 0;
+    
+    
+    
+}
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+    
+        
+}
+
+.user-navigation {
+    width: 580px;
+    
+}
+.site-navigation {
+    width: 1160px;
+  
+}
+.nav-user-form {
+    width: 100%;
+}
+.site-nav {
+    width: 100%;
+}
+.logo {
+    width: 100%;
+    
+}
+.container
+ {
+    width: 1180px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.nav-user-form .container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container .site-navigation {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.form-search {
+    width: 380px;
+    margin: 0;
+    padding: 0;
+}   
 
 .search {
     border: none;
     background-color: #f7e296;
 }
+.container .column {
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo-footer-user {
+    display: flex;
+    justify-content: space-between;
+ 
+}
+.footer-navigation {
+    margin: 0;
+    padding: 0;
+    width: 360px;
+}
+.site-footer-navigation {
+    margin: 0;
+    padding: 0;
+    width: 560px;
+}
+.footer-contacts {
+    margin: 0;
+    padding: 0;
+    width: 280px;   
+}
+.telefon-number {
+    margin: 0;
+    padding: 0;
+    
+}
+.contacts-site-footer {
+    display: flex;
+    justify-content: space-between;
+}
+.social {
+    margin: 0;
+    padding: 0;
+}
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    
+}
+.social-list {
+    align-self: center;
+}
+.logo-HTMLA {
+    align-self: flex-end;
+    
+    
+}
+
+/*
+body > * {
+    background: rgba(255, 0, 0, 0.3);
+}
+body > * > *{
+    background: rgba(255, 255, 0, 0.3);
+}
+body > * > * > * {
+    background: rgba(0, 0, 255, 0.3);
+    
+}
+body > * > * > * > * {
+    background: rgba(0, 255, 255, 0.3);
+}
+*/
+
+
+
+
 
 .visually-hidden {
     position: absolute;
@@ -73,6 +205,8 @@ a {
 .site-navigation,
 .sub-navigation {
     list-style: none;
+    margin: 0;
+    padding: 0;
 
 } 
 .user-navigation a,
@@ -116,6 +250,50 @@ a {
     color: #000000;
 }
 
+
+.page-title {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    width: 500px;
+}
+.breadcrumbs {
+    display: flex;
+    margin: 0;
+    margin-bottom: 55px;
+    padding: 0;
+    width: 400px;
+}
+.title-breadcrumbs {
+    display: flex;
+    flex-direction: column;
+}
+.filters {
+    width: 200px;
+    margin-top:300px;
+}
+.catalog {
+    width: 780px;
+}
+.catalog-columns {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.catalog-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.catalog-item {
+    width: 360px;
+    margin-bottom: 76px;
+    margin-right: 40px;
+}
+.catalog-item:nth-child(2n) {
+    margin-right: 0;
+}
 .color,
 .bluetooth {
     font-family: "Open sans", Arial, sans-serif;
@@ -149,16 +327,24 @@ a {
     list-style: none;
 }
 .catalog-list {
+    list-style: none;
+}
+.catalog-list a {
     font-family: "Gilroy", Arial, sans-serif;
     font-size: 18px;
     line-height: 24px;
     font-weight: 800;
     color: #000000;
-    list-style: none;
+    
 }
-.catalog-list a {
+
+
+.legend {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
     color: #000000;
-    letter-spacing: normal;
 }
 .price {
     font-weight: 300;
@@ -214,6 +400,8 @@ a {
 .main-footer {
     background-color: #464646;
     color: #ffffff;
+    width: 100%;
+    margin-top: 90px;
     
 }
  .user-footer-navigation a,
@@ -229,10 +417,17 @@ a {
 .user-footer-navigation,
 .site-footer-navigation,
 .social {
+    
     list-style: none;
 }
 
 .site-footer-navigation a {
+    font-family: "Gilroy", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     color: #ffffff;
 }
 .user-footer-navigation a:hover,
