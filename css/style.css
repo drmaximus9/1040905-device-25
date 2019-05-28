@@ -27,13 +27,18 @@ body  {
 
 .main-header {
     
-    background-color: #f7e296;
+    padding-top: 40px; 
     margin-bottom: 481px;
-    margin-top: 40px;
+    
 }
 .inner-page .main-header {
     margin-bottom: 44px;
 
+}
+.header-container {
+    background-color: #f7e296;
+    width: 1160px;
+    
 }
 .main-header-logo {
     width: 163px;
@@ -55,7 +60,7 @@ body  {
     
 }
 .site-navigation {
-    width: 1160px;
+    width: 1040px;
   
 }
 .nav-user-form {
@@ -66,13 +71,12 @@ body  {
 }
 .logo {
     width: 100%;
-    
 }
 .container
  {
     width: 1180px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 20px;
 }
 .nav-user-form .container {
     display: flex;
@@ -94,7 +98,7 @@ body  {
     border: none;
     background-color: #f7e296;
 }
-.container .column {
+.column {
     display: flex;
     justify-content: space-between;
 
