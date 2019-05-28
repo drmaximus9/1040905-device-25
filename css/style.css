@@ -1,3 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
 body  {
     margin: 0;
   
@@ -23,6 +32,10 @@ body  {
     src: url("../fonts/gilroylight.woff2") format("woff2"), url("../fonts/gilroylight.woff") format("woff");
     font-weight: 300;
     font-style: normal;
+}
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 .main-header {
@@ -74,9 +87,10 @@ body  {
 }
 .container
  {
-    width: 1180px;
+    width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    
 }
 .nav-user-form .container {
     display: flex;
@@ -98,7 +112,7 @@ body  {
     border: none;
     background-color: #f7e296;
 }
-.column {
+.column .container {
     display: flex;
     justify-content: space-between;
 
@@ -279,11 +293,13 @@ a {
 .catalog {
     width: 780px;
 }
-.catalog-columns {
+.catalog-columns .container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;   
     
 }
+
+
 .catalog-list {
     margin: 0;
     padding: 0;
