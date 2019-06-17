@@ -31,10 +31,8 @@
                             </ul>                           
               </div>                             
             <div class="site-nav">
-              
                   <ul class="site-navigation">
                           <li class="sub-menu-item"><a class="catalog-link" href="catalog.html">каталог товаров</a>
-                          <button class="sub-menu-button" type="button">открыть</button>   
                               <div class="sub-navigation"> 
                                   <ul class="sub-navigation-item-1">
                                     <li><a href="virtualreality.html">Виртуальная реальность</a></li>
@@ -47,14 +45,13 @@
                                   </ul>
                                   <ul class="sub-navigation-item-3">
                                     <li><a href="quadcopters.html">Квадрокоптеры</a></li>
-                                  </ul>
-                                  
+                                  </ul>   
                               </div>
-                            </li>
-                            <li><a class="delivery-link" href="delivery.html">доставка</a></li>
-                            <li><a class="guarantee-link" href="guarantee.html">гарантия</a></li>
-                            <li><a class="contacts-link" href="contacts.html">контакты</a></li>
-                    </ul>
+                          </li>
+                          <li><a class="delivery-link" href="delivery.html">доставка</a></li>
+                          <li><a class="guarantee-link" href="guarantee.html">гарантия</a></li>
+                          <li><a class="contacts-link" href="contacts.html">контакты</a></li>
+                  </ul>
                   
             </div>            
             </nav>
@@ -65,8 +62,8 @@
       <div class="title-breadcrumbs container">
           <h1 class="page-title">Моноподы для селфи</h1>
           <ul class="breadcrumbs">
-              <li><a class="main-bc" href="index.html">Главная</a></li>
-              <li><a class="catalog-bc" href="catalog.html">Каталог товаров</a></li>
+              <li><a class="main-breadcrumbs" href="index.html"><span class="breadcrumbs-link">Главная</span></a></li>
+              <li><a class="catalog-breadcrumbs" href="catalog.html"><span class="breadcrumbs-link">каталог товаров</span></a></li>
               <li class="breadcrumbs-current">Моноподы для селфи</li>
           </ul>
       </div>
@@ -76,40 +73,69 @@
                 <h2 class="visually-hidden">Фильтр товаров</h2>
                   <form class="form-filters" action="https://echo.htmlacademy.ru" method="get">
                   <fieldset class="color">
-                    <legend class="legend">Цвет</legend>
+                    <span class="legend">Цвет</span>
                     <ul class="filter-list">
                       <li class="filter-option">
-                          <label for="black">Чёрный</label>
-                              <input type="checkbox" name= "black" id="black"  checked>      
+                          
+                          <label class="color-check" for="black">
+                            <input type="checkbox" name= "black" id="black" class="visually-hidden"  checked>
+                            <span class="checkbox-indicator"></span> 
+                            Чёрный
+                          </label>      
                       </li>
                       <li class="filter-option">
-                          <label for="white">Белый</label>
-                              <input type="checkbox" name="white" id="white">            
+                          
+                          <label class="color-check" for="white">
+                              <input type="checkbox" name="white" id="white" class="visually-hidden">
+                              <span class="checkbox-indicator"></span>
+                            Белый
+                          </label>            
                       </li>
                       <li class="filter-option">
-                          <label for="blue">Синий</label>
-                              <input type="checkbox" name="blue" id="blue"  checked>     
+                          
+                          <label class="color-check" for="blue">
+                              <input type="checkbox" name="blue" id="blue" class="visually-hidden">
+                              <span class="checkbox-indicator"></span>
+                            Синий
+                          </label>            
                       </li>
                       <li class="filter-option">
-                          <label for="red">Красный</label>
-                              <input type="checkbox" name="red" id="red"  checked>           
+                          
+                          <label class="color-check" for="red">
+                              <input type="checkbox" name="red" id="red" class="visually-hidden">
+                              <span class="checkbox-indicator"></span>
+                            Красный
+                          </label>            
                       </li>  
                       <li class="filter-option">
-                          <label for="pink">Розовый</label>
-                              <input type="checkbox" name="pink" id="pink">    
+                          
+                          <label class="color-check" for="pink">
+                              <input type="checkbox" name="pink" id="pink" class="visually-hidden">
+                              <span class="checkbox-indicator"></span>
+                            Розовый
+                          </label>            
                       </li>
                     </ul>  
                 </fieldset>
+
                 <fieldset class="bluetooth">
-                    <legend class="legend">Bluetooth</legend>
+                    <span class="legend">Bluetooth</span>
                     <ul class="bluetooth-filter">
                       <li class="filter-option">
-                          <label for="yes">Есть</label>
-                              <input type="radio" name="bluetooth" value="yes" id="yes" checked>    
+                          <label class="bluetooth-check" for="yes">
+                            <input type="radio" name="bluetooth" value="yes" id="yes" checked class="visually-hidden"> 
+                            <span class="checkbox-indicator"></span>
+                            Есть
+                          </label>
+                                  
                       </li>
                       <li class="filter-option">
-                          <label for="no">Нет</label>
-                              <input type="radio" name="bluetooth" value="no" id="no"> 
+                          <label class="bluetooth-check" for="no">
+                            <input type="radio" name="bluetooth" value="no" id="no" class="visually-hidden"> 
+                            <span class="checkbox-indicator"></span>
+                            Нет
+                          </label>
+                              
                       </li>
                     </ul>         
                 </fieldset>
@@ -208,10 +234,10 @@
                 
                 <nav class="footer-navigation">
                   <ul class="user-footer-navigation">
-                      <li class="login-link "><a class="footer-link footer-item" href="#">Войти</a></li>
-                      <li><a class="footer-comparisen footer-item" href="comparisen.html">Сравнить</a></li>
-                      <li><a class="footer-basket footer-item" href="basket.html">корзина</a></li>
-                  </ul>
+                    <li class="login-link "><a class="footer-link footer-item " href="#"><span class="user-footer-link">Войти</span></a></li>
+                    <li><a class="footer-comparisen footer-item " href="comparisen.html"><span class="user-footer-link">Сравнить</span></a></li>
+                    <li><a class="footer-basket footer-item " href="basket.html"><span class="user-footer-link">корзина</span></a></li>
+                </ul>
                 </nav> 
           </div>
           <div class="contacts-site-footer">
