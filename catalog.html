@@ -5,7 +5,7 @@
     <title>HTML Academy: Девайс</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/app.min.css" rel="stylesheet">
   </head>
   <body class="inner-page">
       <header class="main-header"> 
@@ -72,12 +72,18 @@
           <section class="filter-titles">
             <div class="container">
                 <h3 class="filter-title">Фильтр:</h3>
-              <h3 class="sort-title">Сортировка:</h3>
-              <ul class="sort">
-                  <li class="title-sort"><a class="sort-price" href="#">По цене</a></li>
+              <div class="filter-sort">
+                <h3 class="sort-title">Сортировка:</h3>
+                <ul class="sort">
+                  <li class="title-sort current">По цене</li>
                   <li class="title-sort"><a class="sort-type" href="#">По типу</a></li>
                   <li class="title-sort"><a class="sort-popularity" href="#">По популярности</a></li>
-              </ul>
+                </ul>
+                <ul class="up-down">
+                  <li ><a class="up" href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="вверх"></a></li>
+                  <li ><a class="down" href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="вниз"></a></li>
+                </ul>
+              </div>
             </div>
               
           </section>
@@ -123,7 +129,7 @@
                       <li class="filter-option">
                           
                           <label class="color-check" for="blue">
-                              <input type="checkbox" name="blue" id="blue" class="visually-hidden">
+                              <input type="checkbox" name="blue" id="blue" class="visually-hidden" checked>
                               <span class="checkbox-indicator"></span>
                             Синий
                           </label>            
@@ -131,7 +137,7 @@
                       <li class="filter-option">
                           
                           <label class="color-check" for="red">
-                              <input type="checkbox" name="red" id="red" class="visually-hidden">
+                              <input type="checkbox" name="red" id="red" class="visually-hidden" checked>
                               <span class="checkbox-indicator"></span>
                             Красный
                           </label>            
@@ -203,6 +209,10 @@
                           <img src="img/product-2.jpg" width="360" height="380"
                                alt="Профессиональная селфи-палка">
                        </p>
+                       <div class="actions">
+                        <button type="submit" class="yellow-button"><span>в корзину</span></button>
+                        <button type="submit" class="add">Добавить к сравнению</button>
+                      </div>
                        <div class="selfi-prof monopods">
                           <h3> 
                               <a href="catalog-item.html">
@@ -221,6 +231,10 @@
                           <img src="img/product-3.jpg" width="360" height="380"
                               alt="Непотопляемая селфи-палка">
                         </p>
+                        <div class="actions">
+                          <button type="submit" class="yellow-button"><span>в корзину</span></button>
+                          <button type="submit" class="add">Добавить к сравнению</button>
+                        </div>
                         <div class="selfi-waterproof monopods">
                             <h3> 
                                 <a href="catalog-item.html">
@@ -239,6 +253,11 @@
                            <img src="img/product-4.jpg" width="360" height="380"
                               alt="Селфи-палка «Следуй за мной»">
                         </p>
+                        <div class="actions">
+                          <button type="submit" class="yellow-button"><span>в корзину</span></button>
+                          <button type="submit" class="add">Добавить к сравнению</button>
+                        </div>
+                        <div class="new"><span>NEW</span></div>
                         <div class="selfi-follow monopods">
                             <h3> 
                                 <a href="catalog-item.html">
@@ -253,18 +272,16 @@
                     </li>
                           
               </ul>
+                <h2 class="visually-hidden">Пагинация</h2>
+                <ul class="pagination-list">
+                  <li class="pagination-direction left"><a href="#"><span>Назад</span></a></li>
+                  <li class="pagination-number pagination-current">1</li>
+                  <li class="pagination-number"><a href="#">2</a></li>
+                  <li class="pagination-number"><a href="#">3</a></li>
+                  <li class="pagination-direction right"><a href="#"><span>Вперед</span></a></li>
+                </ul>
               </section>
-        </div>
-        <section class="pagination container">
-            <h2 class="visually-hidden">Пагинация</h2>
-            <ul class="pagination-list">
-              <li class="pagination-direction">Назад</li>
-              <li class="pagination-number">1</li>
-              <li class="pagination-number">2</li>
-              <li class="pagination-number">3</li>
-              <li class="pagination-direction">Вперед</li>
-            </ul>
-          </section>  
+        </div> 
       </div>
       
     </main>
