@@ -747,7 +747,7 @@
      letter-spacing: 0.01em;
 }
  .popular-link {
-     display: block 
+     display: block
 }
  .popular-item:nth-child(6) {
      margin-right: 0;
@@ -1496,7 +1496,7 @@
      line-height: 24px;
      background-color: #d9d9d9;
      opacity: 0.2;
-    
+
 }
  .catalog-item:nth-child(3) {
      margin-top: 46px;
@@ -1902,13 +1902,13 @@
      width: 100%;
      min-height: 323px;
      padding-top: 21px;
-     
+
 }
  .main-footer {
      background-color: #464646;
      color: #ffffff;
      width: 100%;
-     
+
      min-height: 323px;
      padding-top: 21px;
 }
@@ -2297,7 +2297,7 @@
      background-color: #ffffff;
 }
  .write-field input:invalid {
-     background-clip: #f6dada;
+     background-color: #f6dada;
 }
  .write-field p {
      display: flex;
@@ -2402,7 +2402,7 @@
      font: inherit;
      padding: 8px 30px;
      background-color: transparent;
-     
+
      letter-spacing: 0.2em;
 }
 .button-write:hover {
@@ -2446,4 +2446,3 @@
      margin: 0;
      padding: 0;
 }
- 
